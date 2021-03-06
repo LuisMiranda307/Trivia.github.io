@@ -100,5 +100,11 @@ button:hover {
 
 #NextQ {
     background-color: #5cd65c;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    border-radius: 15px;
 }
 
