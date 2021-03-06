@@ -20,7 +20,7 @@
       
     <div class="iniciar">
         <div class="question"></div>
-        <button onClick="printHTMLQuestion(currentQuestionIndex)">Next Question</button>
+        <button id="NextQ" onClick="printHTMLQuestion(currentQuestionIndex)">Siguiente Pregunta</button>
 
         <p>Respuestas Correctas: <span class="rightCounter">0</span></p>
         <p>Respuestas Incorrectas: <span class="wrongCounter">0</span></p>
@@ -77,7 +77,7 @@
 
 
 
-            const htmlAnswersArray = a.map( currentA => `<p class="answer"><button onClick="evaluateAnswer('${currentA}', this)">X</button> <span>${currentA}</span></p>`);
+            const htmlAnswersArray = a.map( currentA => `<p class="answer"><button class="answer-btn" onClick="evaluateAnswer('${currentA}', this)">X</button> <span>${currentA}</span></p>`);
             const htmlAnswers = htmlAnswersArray.join(' ')
 
 
